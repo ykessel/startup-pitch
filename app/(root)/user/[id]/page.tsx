@@ -7,6 +7,7 @@ import Image from "next/image";
 import UserStartups from "@/components/core/UserStartups";
 import {StartupCardSkeleton} from "@/components/core/StartupCard";
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const experimental_ppr = true;
 
 const Page = async ({params}: { params: Promise<{ id: string }> }) => {

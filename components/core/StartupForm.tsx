@@ -16,7 +16,7 @@ const StartupForm = () => {
     const [pitch, setPitch] = useState('');
     const {toast} = useToast();
     const router = useRouter();
-    const handleSubmit = async (prevState: any, formData: FormData) => {
+    const handleSubmit = async (prevState: object, formData: FormData) => {
         try {
             const formValues = {
                 title: formData.get('title') as string,
@@ -56,7 +56,7 @@ const StartupForm = () => {
             return {...prevState, error: 'Something went wrong', status: 'ERROR'}
         }
     }
-    const [state, formAction, isPending] = useActionState(handleSubmit, {error: '', status: 'INITIAL'})
+    const [, formAction, isPending] = useActionState(handleSubmit, {error: '', status: 'INITIAL'})
 
     return <form action={formAction} className={'startup-form'}>
         <div>

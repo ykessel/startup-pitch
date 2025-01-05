@@ -11,6 +11,7 @@ import View from "@/components/core/View";
 import StartupCard, {StartupTypeCard} from "@/components/core/StartupCard";
 
 const md = markdownit();
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const experimental_ppr = true;
 
 const Page = async ({params}: { params: Promise<{ id: string }> }) => {

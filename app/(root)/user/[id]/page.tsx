@@ -23,7 +23,8 @@ const Page = async ({params}: { params: Promise<{ id: string }> }) => {
                     <div className={'profile_title'}>
                         <h3 className={'text-24-black uppercase text-center line-clamp-1'}>{user.name}</h3>
                     </div>
-                    <Image src={user?.image} alt={user?.name} width={220} height={220} className={"profile_image"}/>
+                    <Image src={user?.image} alt={user?.name} width={220} height={220}
+                           className={"rounded-[50%] border-[3px] border-black"}/>
                     <p className={'text-30-extrabold mt-7 text-center'}>
                         @{user?.username}
                     </p>
